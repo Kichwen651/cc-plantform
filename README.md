@@ -16,7 +16,7 @@ The application entails of a plant store app where a user can access it through 
 
 
 ## Endpoints||Live server
-You can view the web live on :
+You can view the web live on :https://bucolic-sprinkles-6953d0.netlify.app/
 
 ## Core Deliverables
 
