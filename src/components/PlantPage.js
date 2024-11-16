@@ -11,7 +11,7 @@ function PlantPage() {
   useEffect(() => {
     const fetchPlants = async () => {
       try {
-        const response = await fetch("http://localhost:5000/plants");
+        const response = await fetch("https://cc-plantform-1.onrender.com/plants");
         const data = await response.json();
         setPlants(data);
       } catch (error) {
@@ -24,7 +24,7 @@ function PlantPage() {
 
   const handleAddPlant = async (newPlant) => {
     try {
-      const response = await fetch("http://localhost:5000/plants", {
+      const response = await fetch("https://cc-plantform-1.onrender.com/plants", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -43,7 +43,7 @@ function PlantPage() {
     const updatedPlant = { ...plantToUpdate, inStock: !plantToUpdate.inStock };
 
     try {
-      await fetch(`http://localhost:5000/plants/${id}`, {
+      await fetch(`https://cc-plantform-1.onrender.com/plants/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
